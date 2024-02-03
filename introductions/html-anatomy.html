@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Anotomy</title>
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            .float {
+                width: 100%;
+            }
+            .left {
+                width: 50%;
+                float: left;
+                border: 0px solid red;
+
+            }
+            .right {
+                width: 50%;
+                height: 100%;
+                float: right;
+                border: 0px solid blue;
+                text-align: center;
+                background: black;
+
+            }
+            .img {
+                width: 100%;
+            }
+            .full {
+                width: 100%;    
+                float: left;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="full">
+            <h3>HTML Anotomy</h3>
+                <em>(<strong>Giải phẫu/ cấu trúc /əˈnætəmi/</strong> HTML)</em>
+        </div>
+        <div class="full">
+            <p>
+                HTML is composed of <u>elements</u>.
+                <br>
+                <em>(HTML bao gồm <strong>/kəmˈpəʊzd/</strong> <u>các phần tử</u>.)</em>
+                <br>
+                These elements structure the webpage and define its content.
+                <br>
+                <em>(Những phần tử này làm nên cấu trúc trang web và xác định <strong>/dɪˈfaɪn/</strong> nội dung của nó.)</em>
+                <br>
+                Let's take a look at how they're written.
+                <br>
+                <em>(Hãy xem cách họ viết.)</em>
+            </p>
+        </div>
+        <div class="full">
+            <div class="float">
+                <div class="left">
+                    <p>
+                        The diagram to the right displays an HTML paragraph element.
+                        <br>
+                        <em>(Sơ đồ <strong>/ˈdaɪ.ə.ɡræm/</strong> bên phải hiển thị <strong> /dɪˈspleɪz/</strong> một phần tử trong đoạn văn bản <strong> /ˈpær.ə.ɡrɑːf/ 
+        
+                        </strong> HTML.)</em>
+                    </p>
+                    <p>
+                        As we can see, the paragraph element is made up of:
+                        <br>
+                        <em>
+                            (Như chúng ta có thể thấy, phần tử đoạn văn được tạo thành từ:)
+                        </em>
+                        <ul>
+                            <li>
+                                An opening tag (<code class="code">&lt;p&gt;</code>)
+                            <br>
+                            <em>(Thẻ mở (<code class="code">&lt;p&gt;</code>))</em>
+                        </li>
+                            <li>
+                                The content ("Hello World!" text)
+                                <br>
+                                <em>(Nội dung ("Hello World!" text))</em>
+                            </li>
+                            <li>
+                                A closing tag (<code class="code">&lt;/p&gt;</code>)
+                                <br>
+                                <em>
+                                    (Thẻ đóng (<code class="code">&lt;/p&gt;</code>))
+                                </em>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="../img/html-lesson-image.svg" alt="" class="img">
+                </div>
+            </div>
+        </div>
+        <div class="full" style="width: 100%; float: left;">
+            <p>
+                A <em>tag</em> and the <em>content</em> between it is called an HTML element.
+                <br>
+                <em>(Thẻ và nội dung giữa nó được gọi là phần tử HTML.)</em>
+                <br>
+                There are many tags that we can use to organize and display text and other types of content, like images.
+                <br>
+                <em>
+                    (Có nhiều thẻ mà chúng ta có thể sử dụng để sắp xếp và hiển thị văn bản và các loại nội dung khác, như hình ảnh.)
+                </em>
+            </p>
+            <p>
+                Let's quickly review each part of the element picture:
+                <br>
+                <em>
+                    (Hãy cùng xem lại nhanh từng phần của phần tử trong hình:)
+                </em>
+                <ul>
+                    <li>HTML element (or simply, element) - a unit of content in an HTML document formed by HTML tags andd the text or media it contains.
+                        <br>
+                        <em>(Phần tử HTML (hoặc đơn giản là phần tử) - một đơn vị nội dung trong tài liệu HTML được tạo thành bởi các thẻ HTML và văn bản hoặc phương tiện chứa trong đó)
+
+                        </em>
+                    </li>
+                    <li>
+                        HTML Tag - the element name, surrounded by an opening (<code class="code">&lt;</code>) and closing (<code class="code">&gt;</code>) angle bracket.
+                        <br>
+                        <em>
+                            (Thẻ HTML - tên phần tử, được bao quanh bởi dấu ngoặc nhọn mở (<code class="code">&lt;</code>) và đóng (<code class="code">&gt;</code>).)
+                        </em>
+                    </li>
+                    <li>
+                        Opening Tag - the first HTML tag used to start an HMTL element.
+                        <br>
+                        <em>
+                            (Thẻ mở - thẻ HTML đầu tiên được sử dụng để bắt đầu một phần tử HTML.)
+                        </em>
+                        <br>
+                        The tag type is surrounded by opening and closing angle bracket.
+                        <br>
+                        <em>
+                            (Loại thẻ được bao quanh bởi dấu ngoặc nhọn mở và đóng.)
+                        </em>
+                        <br>
+                    </li>
+                    <li>
+                        Content - The information (text or other elements) contained between the opening and closing tags of an HTML element.
+                        <br>
+                        <em>
+                            (Nội dung - thông tin (văn bản hoặc các phần tử khác) chứa giữa thẻ mở và thẻ đóng của phần tử HTML.)
+                        </em>
+                    </li>
+                    <li>
+                        Closing tag - the second HTML tag used to end an HTML element.
+                        <br>
+                        <em>
+                            (Thẻ đóng - thẻ HTML thứ hai được sử dụng để kết thúc một phần tử HTML.)
+                        </em>
+                        <br>
+                        Closing tags have a forward slash (<code class="code">/</code>) inside of them, after the left angle bracket.
+                        <br>
+                        <em>
+                            Các thẻ đóng có một dấu gạch chéo (<code class="code">/</code>) bên trong, ngay sau dấu ngoặc nhọn bên trái.
+                        </em>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="full">
+            <div class="instructions">
+                <h3>&&Instructions</h3>
+                <em>(Hướng dẫn <strong>/ɪnˈstrʌkʃn/)</strong></em>
+                <br>
+                <p>
+                    Study the diagram to the right to learn about the anatomy of HTML sytax.
+                    <br>
+                    <em>
+                        (Nghiên cứu sơ đồ <strong>/ˈdaɪəɡræm/</strong> bên phải để tìm hiểu về cấu trúc cú pháp HTMLM.)
+                    </em>
+                    <br>
+                    When you're done, continue to the next exercise.
+                    <br>
+                    <em>
+                        (Khi bạn hoàn thành, hãy tiếp tục bài tập <strong>/ˈeksərsaɪz/</strong> tiếp theo.)
+                    </em>
+                </p>
+            </div>
+        </div>
+        <div class="full">
+            <div class="concept-review">
+                <h3>Concept review</h3>
+                <em>(Xem lại khái niệm <strong>/ˈkɑːnsept/</strong> (Ôn tập))</em>
+                <p>
+                    Want to quickly review some of the concepts you've been learning?
+                    <br>
+                    <em>(Bạn muốn xem lại nhanh chóng một số khái niệm bạn đã từng học?)</em>
+                    <br>
+                    Take a look at this material's <a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet">cheatsheet</a>!
+                    <br>
+                    <em>(Hãy nhìn vào cheatsheet của tài liệu này!)</em>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

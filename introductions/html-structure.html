@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Structure</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="full">
+            <h2>HTML Structure</h2>
+            <p>
+                HTML is organize as a collection of family tree relationships.
+                <br>
+                <em>
+                    (HTML được tổ chức <strong>/ˈɔːrɡənaɪzd/</strong> như một tập hợp <strong>/kəˈlekʃn/</strong> các mối quan <strong>/rɪˈleɪʃnʃɪp/</strong> hệ cây phả hệ.)
+                </em>
+                <br>
+                As you saw in the last exrcise, we placed <code class="code">&lt;p&gt;</code> tags within <code class="code">&lt;body&gt;</code> tags.
+                <br>
+                <em>
+                    (Như bạn đã nhìn thấy trong bài tập <strong>/ˈeksərsaɪz/</strong> trước, chúng ta đã đặt <strong>/pleɪst/</strong> các thẻ <strong>p</strong> trong các thẻ <strong>body</strong> )
+                </em>
+                <br>
+                When an element is contained inside another element, it is considered the <em>child</em> of that element.
+                <br>
+                <em>
+                    (Khi một phần tử được chứa <strong>/kənˈteɪnd/</strong> bên trong một phần tử khác, nó được coi/ xem <strong>/kənˈsɪdərd/</strong> là phần tử con của phần tử đó.)
+                </em>
+                <br>
+                The child element is said to be <em>nested</em> inside of the <em>parent</em> element.
+                <br>
+                <em>
+                    (Phấn tử con được cho <strong>/sed/</strong> là được lồng <strong>/ˈnestɪ</strong> bên trong phần tử cha.)
+                </em>
+            </p>
+            <pre>
+                <code class="language-html">
+&lt;body&gt;
+&lt;p&gt;This paragraph is a child of the body&lt;/p&gt;
+&lt;/body&gt;                    
+                </code>
+            </pre>
+            <p>
+                In the example above, the <code class="code">&lt;p&gt;</code> element is nested inside the <code class="code">&lt;body&gt;</code> element.
+                <br>
+                <em>(Trong ví dụ trên, phần tử <strong>p</strong> được lồng ở bên trong phần tử <strong>body</strong>.)</em>
+                <br>
+                The <code class="code">&lt;p&gt;</code> element is considered a child of the <code class="code">&lt;body&gt;</code> element, and the <code class="code">&lt;body&gt;</code> element is considered the parent.
+                <br>
+                <em>(Phần tử <strong>p</strong> được coi là phần tử con của phần tử <strong>body</strong>, và phần tử <strong>body</strong> được xem là cha.)</em>
+                <br>
+                You can also see that we've added two spaces of indentation (using the <span style="border: 1px solid black; border-radius: 10%; background-color: azure;">space</span> bar ) for better readability.
+                <br>
+                <em>
+                    (Bạn cũng có thể thấy rằng chúng ta đã thể hai khoảng cách <strong>/ˈspeɪsɪz/</strong> thục lề <strong>/ˌɪndenˈteɪʃn/</strong> (sử dụng phím <strong>cách</strong> để dễ học <strong>/ˌriːdəˈbɪləti/</strong> hơn.))
+                </em>
+            </p>
+            <p>
+                Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren, and beyond.
+                <br>
+                <em>
+                    (Vì có thể có nhiều <strong>/ˈmʌltɪpl/</strong> cấp độ được lồng nhau, nên sự tương tự <strong>/əˈnælədʒi/</strong> này có thể được mở rộng cho con cháu <strong>/ˈɡræntʃɪldrən/</strong>, chắt, và hơn thể nữa <strong>/bɪˈjɑːnd/</strong>.)
+                </em>
+                <br>
+                The relationship between elements and their ancestor and descendent elements is know as <em>hierachy</em>.
+                <br>
+                <em>
+                    Mối quan hệ giữa các phần tử và tổ tiên <strong>/ˈænsestər/</strong> của chúng và các phần tử con cháu <strong>/dɪˈsen.dənt/</strong> được gọi là hệ thống phân cấp <strong>/ˈhaɪərɑːrki/</strong>.
+                </em>
+            </p>
+            <p>
+                Let's consider a more complicated example that uses some new tags:
+                <br>
+                <em>(Hãy xem xét <strong>/kənˈsɪdər/</strong> thêm một ví dụ phức tạp <strong>/ˈkɑːmplɪkeɪtɪd/</strong> hơn sử dụng một số thẻ mới.)</em>
+            </p>
+            <pre>
+                <code class="language-html">
+&lt;body&gt;
+&lt;div&gt;
+    &lt;h1&gt;Sibling to p, but also grandchild of body&lt;/h1&gt;
+    &lt;p&gt;Sibling to h1, but also grandchild of body&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+                </code>
+            </pre>
+            <p>
+                In this  example, the <code class="code">&lt;body&gt;</code> element is the parent of the &lt;div&gt; element.
+                <br>
+                <em>(Trong ví dụ này, phần tử <code class="code">&lt;body&gt;</code> là cha của phần tử <code class="code">&lt;div&gt;</code>.)</em>
+                <br>
+                Both the <code class="code">&lt;h1&gt;</code> and <code class="code">&lt;p&gt;</code> elements are children of the <code class="code">&lt;div&gt;</code> element.
+                <br>
+                <em>(Cả hai phần tử <code class="code">&lt;h1&gt;</code> và <code class="code">&lt;p&gt;</code> đều là con của phần tử <code class="code">&lt;div&gt;</code>)</em>
+                <br>
+                Because the <code class="code">&lt;h1&gt;</code> and <code class="code">&lt;p&gt;</code> elements are at the same level, they are considered siblings and are both grandchildren of the <code class="code">&lt;body&gt;</code> element.
+                <br>
+                <em>(Vì phần tử <code class="code">&lt;h1&gt;</code> và <code class="code">&lt;p&gt;</code> có cùng cấp độ nên chúng được coi là anh em ruột <strong>/ˈsɪblɪŋ/</strong> và đều là cháu của phần tử <code class="code">&lt;body&gt;</code>)</em>
+            </p>
+            <p>
+                Understanding HTML hierarchy is important because child elements can inherit behavior and styling from their parent element.
+                <br>
+                <em>(Hiểu được hệ thống phân cấp <strong>/ˈhaɪərɑːrki/</strong> HTML rất quan trọng vì các phần tử con có thể kế thừa <strong>/ɪnˈherɪt/</strong> hành vi <strong>/bɪˈheɪvjər/</strong> và kiểu từ phần tử cha của chúng.)</em>
+                <br>
+                You'll learn more about webpage hierarchy when you start digging into CSS.
+                <br>
+                <em>(Bạn sẽ tìm hiểu thên về hệ thống phân cấp <strong>/ˈhaɪərɑːrki/</strong> trang web khi bạn bắt đầu tìm hiểu sâu/ đào sâu <strong>/ˈdɪɡɪŋ/</strong> về CSS.)</em>
+            </p>
+            <div class="instructions">
+                <h3>&&Instructions</h3>
+                <em>(Hướng dẫn <strong>/ɪnˈstrʌkʃn/)</strong></em>
+                <br>
+                <ol>
+                    <li>
+                        Add the paragraph below as a child of the <code class="code">div</code> element.
+                        <br>
+                        <em>(Thêm đoạn <strong>/ˈpærəɡræf/</strong> bên dưới làm phần tử con của phần tử <strong>div</strong>.)</em>
+                    </li>
+                </ol>
+                <pre>
+                    <code class="language-html">&lt;p&gt;This paragraph is a child of the div element and a grandchild of the body element&lt;/p&gt;</code>
+                </pre>
+                <p>Answer:</p>
+                <pre>
+                    <code class="language-html">
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;This paragraph is a child of the div element and a grandchild of the body element&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                    </code>
+                </pre>
+                <div class="concept-review">
+                    <h3>&&Concept review</h3>
+                    <em>(Xem lại khái niệm <strong>/ˈkɑːnsept/</strong> (Ôn tập))</em>
+                    <p>
+                        Want to quickly review some of the concepts you've been learning?
+                        <br>
+                        <em>(Bạn muốn xem lại nhanh chóng một số khái niệm bạn đã từng học?)</em>
+                        <br>
+                        Take a look at this material's <a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet">cheatsheet</a>!
+                        <br>
+                        <em>(Hãy nhìn vào cheatsheet của tài liệu này!)</em>
+                    </p>
+                </div>
+        </div>
+    </body>
+</html>
