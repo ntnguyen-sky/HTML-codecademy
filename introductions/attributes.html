@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attributes</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="full">
+            <p>
+                If we want t expand an element's tag, we can do so using an attribute.
+                <br>
+                <em>(Nếu chúng ta muốn mở rộng <strong>/ɪkˈspænd/</strong> thẻ của một phần tử, chúng ta có thể làm như vậy bằng cách sử dụng thuộc tính.)</em>
+                <br>
+                <em>Attributes</em> are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling.
+                <br>
+                <em>(Thuộc tính là nội dung được thêm vào thẻ mở của phần tử và có thể được sử dụng theo nhiều cách khác nhau, từ cung cấp <strong>/prəˈvaɪdɪŋ/</strong> thông tin đến thay đổi <strong>/ˈtʃeɪndʒɪŋ/</strong> kiểu dáng <strong>/ˈstaɪlɪŋ/</strong>.)</em>
+                <br>
+                <em>***<u>Attributes:</u> Attributes can be added to the opening tag of an HTML element to change its default behavior or provide additional data about it.</em>
+                <br>
+                <em>(***<u>Attributes: (<strong>/əˈtrɪbjuːt/</strong>)</u> Các thuộc tính có thể được thêm vào thể mở của phần tử HTML để thay đổi hành vi <strong>/bɪˈheɪvjər/</strong> mặc định <strong>/dɪˈfɔːlt/</strong> của nó hoặc cung cấp <strong>/prəˈvaɪd/</strong> dữ liệu bổ sung <strong>/əˈdɪʃənl/</strong> về nó.)</em>
+                <br>
+                Attributes are made up of the following two parts:
+                <br>
+                <em>(Các thuộc tính được tạo thành từ hai phần sau:)</em>
+                <br>
+                <ul>
+                    <li>
+                        The <em>name</em> of the attribute
+                        <br>
+                        <em>(Tên của thuộc tính)</em>
+                    </li>
+                    <li>
+                        The <em>value</em> of the attribute
+                        <br>
+                        <em>(Gía trị của thuộc tính)</em>
+                    </li>
+                </ul> 
+            </p>
+            <p>
+                One commongly used attrubute is the <code class="code">id</code>.
+                <br>
+                <em>(Một thuộc tính thường <strong>/ˈkɑːmənli/</strong> được sử dụng là <code class="code">id</code>.)</em>
+                <br>
+                We can use the <code class="code">id</code> attribute to specify different content (such as <code class="code">&lt;div&gt;</code>s) and is really helpful when you use an element more than once.
+                <br>
+                <em>(Chúng ta có thể sử dụng thuộc tính <code class="code">id</code> để chỉ định/ định rõ <strong>/ˈspesɪfaɪ/</strong> các nội dung khác nhau (chẳng hạn như các <code class="code">&lt;div&gt;</code>) và thật sự hữu ích khi bạn sử dụng một phần tử nhiều lần.)</em>
+                <br>
+                <code class="code">id</code>s have several different purposes in HTML, but for now, we'll focus on how they can help us identify content on our page.
+                <br>
+                <em>(Các <code class="code">id</code> có nhiều <strong>/ˈsevrəl/</strong> mục đích <strong>/ˈpɜːrpəsɪz/</strong> khác nhau trong HTML, nhưng hiện tại, chúng ta sẽ tập trung làm thế nào chúng có thể giúp ích chúng ta xác định <strong>/aɪˈdentɪfaɪ/</strong> nội dung trên trang của mình.)</em>
+            </p>
+            <p>
+                When we add an <code class="code">id</code> to a <code class="code">&lt;div&gt;</code>, we place it in the opening tag:
+                <br>
+                <em>(Khi chúng ta thêm <code class="code">id</code> vào <code class="code">&lt;div&gt;</code>, chúng ta sẽ đặt nó vào thẻ mở:)</em>
+            </p>
+            <pre>
+                <code class="language-html">
+&lt;div id=&quot;intro&quot;&gt;
+    &lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+            <div class="instructions">
+                <h3>&&Instructions</h3>
+                <em>(Hướng dẫn <strong>/ɪnˈstrʌkʃn/)</strong></em>
+                <br>
+                <ol>
+                    <li>
+                        Add an <code class="code">id</code> attribute with the value <code class="code">"introduction"</code> to the <code class="code">&lt;div&gt;</code> tag that's below the <code class="code">The Brown Brear</code> <code class="code">&lt;h1&gt;</code> heading.
+                        <br>
+                        <em>
+                            (Thêm một thuộc tính <code class="code">id</code> với giá trị <code class="code">"introduction"</code> vào thẻ <code class="code">&lt;div&gt;</code>, tiêu đề bên dưới với nội dung <code class="code">The Brown Brear</code> <code class="code">&lt;h1&gt;</code>.)
+                        </em>
+                        <br>
+                        <div class="stuck">
+                            Stuck? Get a hint
+                            <br>
+                            <em>(Mắc kẹt/ bí ý tưởng <strong>/stʌk/</strong>? Nhận một gợi ý <strong>/hɪnt/</strong> )</em>
+                        </div>
+                        ***<strong>Hint</strong>
+                        <br>
+                        When we add an <code class="code">id</code> attribute to an HTML element, we place it within the opening tag:
+                        <br>
+                        <em>(Khi chúng ta thêm một thuộc tính <code class="code">id</code> vào phần tử HTML, chúng ta đặt nó bên trong thẻ mở:)</em>
+                        <br>
+                        <pre>
+                            <code class="language-html">
+&lt;div id=&quot;summary&quot;&gt;                       
+                            </code>
+                        </pre>
+                    </li>
+                    <li>
+                        Add an <code class="code">id</code> attribute with the value <code class="code">"Habitat"</code> to the opening <code class="code">&lt;div&gt;</code> tag that has the <code class="code">Habitat</code> heading as a child.
+                        <br>
+                        <em>
+                            (Thêm một thuộc tính <code class="code">id</code> với giá trị <code class="code">"Habitat"</code> vào thẻ mở <code class="code">&lt;div&gt;</code>, tiêu đề có nội dung <code class="code">Habitat</code> như là con của div.)
+                        </em>
+                    </li>
+                    <li>
+                        Add an <code class="code">id</code> attribute with the value <code class="code">"media"</code> to the opening <code class="code">&lt;div&gt;</code> tag that has the <code class="code">Media</code> <code class="code">&lt;h2&gt;</code> heading as a child.
+                        <br>
+                        <em>(Thêm một thuộc tính <code class="code">id</code> với giá trị là <code class="code">"media"</code> vào thẻ mở <code class="code">&lt;div&gt;</code>, với heading nội dung  <code class="code">Media</code> <code class="code">&lt;h2&gt;</code> như con của div.)</em>
+                    </li>
+                </ol>
+                <p>
+                    Answer:
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;h1&gt;The Brown Bear&lt;/h1&gt;
+    &lt;div id=&quot;introduction&quot;&gt;
+        &lt;h2&gt;About Brown Bears&lt;/h2&gt;
+        &lt;h3&gt;Species&lt;/h3&gt;
+        &lt;h3&gt;Features&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;habitat&quot;&gt;
+        &lt;h2&gt;Habitat&lt;/h2&gt;
+        &lt;h3&gt;Countries with Large Brown Bear Populations&lt;/h3&gt;
+        &lt;h3&gt;Countries with Small Brown Bear Populations&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;media&quot;&gt;
+        &lt;h2&gt;Media&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/body&gt;                            
+                        </code>
+                    </pre>
+                </p>
+            </div>
+            <div class="concept-review">
+                <h3>&&Concept review</h3>
+                <em>(Xem lại khái niệm <strong>/ˈkɑːnsept/</strong> (Ôn tập))</em>
+                <p>
+                    Want to quickly review some of the concepts you've been learning?
+                    <br>
+                    <em>(Bạn muốn xem lại nhanh chóng một số khái niệm bạn đã từng học?)</em>
+                    <br>
+                    Take a look at this material's <a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet">cheatsheet</a>!
+                    <br>
+                    <em>(Hãy nhìn vào cheatsheet của tài liệu này!)</em>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

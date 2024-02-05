@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Displaying Text</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <style>
+            .div-border-left {
+                border-left: 10px solid rgb(219, 215, 215);
+                padding-left: 15px;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="full">
+            <h2>Displaying Text</h2>
+            <em>(Hiển thị văn bản <strong>/dɪˈspleɪɪŋ tekst/</strong> )</em>
+            <p>
+                If you want to display text in HML, you can use a paragraph or span:
+                <br>
+                (Nếu bạn muốn hiển thị văn bản trong HTML, bạn có thể sử dụng một paragraph hoặc span.)
+                <br>
+                <ul>
+                    <li>
+                        <u>Paragraphs</u> (<code class="code">&lt;p&gt;</code>) contain a block of plain text.
+                        <br>
+                        <em>(<u>Đoạn văn:</u> <strong>/ˈpærəɡræf/</strong> Nếu bạn muốn hiển thị văn bản trong HTTML, bạn có thể sử dụng một đoạn văn hoặc khoảng <strong>/spæn/</strong>:)</em>
+                        <br>
+                        <em><u>**Paragraph:</u></em> Contains and displays a block of text that defines a paragraph.
+                        <br>
+                        <em>(Paragraph: Chứa và hiển thị một khối văn bản xác định một đoạn văn.)</em>
+                    </li>
+                    <li>
+                        <u><code class="code">&lt;span&gt;</code></u> contains short pieces of text or other HML.
+                        <br>
+                        <em>(<u><code class="code">&lt;span&gt;</code></u> chứa các mẩu/ đoạn <strong>/ˈpiːsɪz/</strong> văn bản ngắn hoặc HTML khác.)</em>
+                        <br>
+                        <em><u>&lt;span&gt;</u>: Used for grouping related text or elements for styling and scripting.
+                        <br>
+                        <u>&lt;span&gt;</u>: Được sử dụng để nhóm văn bản hoặc phần tử liên quan để tạo kiểu và viết kịch bản.
+                        </em>
+                        <br>
+                        They are used to separate small pieces of content that are on the same line as other content.
+                        <br>
+                        <em>(Chúng được sử dụng để phân tách các mẫu nội dung nhỏ nằm trên cùng một dòng với nội dung khác.)</em>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Take a look a each of these elements in action below:
+                <br>
+                <em>(Hãy xem từng phần tử này trong hoạt động bên dưới: )</em>
+            </p>
+            <pre>
+                <code class="language-html">
+&lt;div&gt;
+    &lt;h1&gt;Technology&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;p&gt;&lt;span&gt;Self-driving cars&lt;/span&gt; are anticipated to replace up to 2 million jobs over the next two decades.&lt;/p&gt;
+&lt;/div&gt;                    
+                </code>
+            </pre>
+            <p>
+                Trong ví dụ ở trên, có hai <code class="code">&lt;div&gt;</code> khác nhau.
+                <br>
+                <em>(In the example above, there are two different <code class="code">&lt;div&gt;</code>.)</em>
+                <br>
+                The second <code class="code">&lt;div&gt;</code> contains a <code class="code">&lt;p&gt;</code> with <code class="code">&lt;span&gt;Self-driving cars&lt;/span&gt;</code>.
+                <br>
+                <em>(<code class="code">&lt;div&gt;</code> thứ hai chứa một phần tử <code class="code">&lt;p&gt;</code> với phần tử kèm nội dung <code class="code">&lt;span&gt;Self-driving cars&lt;/span&gt;</code>.)</em>
+                <br>
+                This <code class="code">&lt;span&gt;</code> elements separates "<em>Self-driving cars</em>" from the rest of the text in the paragraph.
+                <br>
+                <em>(Phần tử <code class="code">&lt;span&gt;</code> này phân tách <strong>/ˈseprəts/</strong> separates "<em>Self-driving cars</em>" khỏi phần còn lại của văn bản trong đoạn văn.)</em>
+            </p>
+            <p>
+                It's best to use a <code class="code">&lt;span&gt;</code> element when you want to target a specific piece of content that is <em>inline</em>, or on the same line as other text.
+                <br>
+                <em>(Tốt nhất bạn nên sử dụng một phần tử <code class="code">&lt;span&gt;</code> khi bạn muốn nhắm đến mục tiêu <strong>/ˈtɑːrɡɪt/</strong> một phần nội dung cụ thể <strong>/spəˈsɪfɪk/</strong> nằm  <em>trong cùng một dòng</em>, hoặc trên cùng một dòng với văn bản khác.)</em>
+                <br>
+                If you want to divice your content into blocks, it's better to use a <code class="code">&lt;div&gt;</code>.
+                <br>
+                <em>(Nếu bạn muốn chia <strong>/dɪˈvaɪd/</strong> nội dung của mình thành các khối, tốt hơn bạn nên sử dụng phần tử <code class="code">&lt;div&gt;</code>)</em>
+            </p>
+            <div class="instructions">
+                <h3>&&Instructions</h3>
+                <em>(Hướng dẫn <strong>/ɪnˈstrʌkʃn/)</strong></em>
+                <br>
+                <ol>
+                    <li>
+                        Below the <code class="code">&lt;h2&gt;</code> element that says <code class="code">About Brown Bear</code>, and <code class="code">&lt;p&gt;</code> opening and closing tags, and inside of the tags put the following text:
+                        <br>
+                        <em>
+                            (Bên dưới phần tử <code class="code">&lt;h2&gt;</code> có nội dung <code class="code">About Brown Bears</code>, và thẻ mở đóng <code class="code">&lt;p&gt;</code>, và bên trong của thẻ đặt văn bản sau vào:)
+                        </em>
+                        <br>
+                        <div class="div-border-left">
+                            <em>The brow bear (Ursus arctos) is native to parts of northern Eurasia and North America. Its conservation status is currently Least Concern. There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</em>
+                        </div>
+                        <br>
+                        Remember to always add two spaces of indentation when you nest elements inside of <code class="code">&lt;div&gt;</code>s for better readability.
+                        <br>
+                        <br>
+                        <div class="stuck">
+                            Stuck? Get a hint
+                            <br>
+                            <em>(Mắc kẹt/ bí ý tưởng <strong>/stʌk/</strong>? Nhận một gợi ý <strong>/hɪnt/</strong> )</em>
+                        </div>
+                        <br>
+                        ***<strong>Hint</strong>
+                        <br>
+                        Make sure to indent the <code class="code">&lt;p&gt;</code> tags (not the text itself) the same amount as the rest of the content within the <code class="code">&lt;div&gt;</code>:
+                        <br>
+                        <em>(Đảm bảo thục lề <strong>/ɪnˈdent/</strong> các thẻ <code class="code">&lt;p&gt;</code> (không phải chính văn bản) bằng với số lượng phần còn lại của nội dung trong <code class="code">&lt;div&gt;</code>:)</em>
+                        <br>
+                        <pre>
+                            <code class="language-html">
+&lt;div&gt;
+    &lt;p&gt;I'm a paragraph of text! A very short 
+paragraph, but still a paragraph.&lt;/p&gt;
+&lt;/div&gt;                                
+                            </code>
+                        </pre>
+                    </li>
+                    <li>
+                        Below the <code class="code">&lt;h3&gt;</code> element that says <code class="code">Features</code>, add a paragraph with the following text:
+                        <br>
+                        <em>
+                            (Bên dưới phần tử <code class="code">&lt;h3&gt;</code> với nội dung <code class="code">Features</code>, thêm một đoạn văn có nội dung sau:)
+                        </em>
+                        <div class="div-border-left">
+                            <em>
+                                Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.
+                            </em>
+                        </div>
+                        <div class="stuck">
+                            Hint
+                        </div>
+                        <p>
+                            Don't forget to wrap the text on opening and closing <code class="code">&lt;p&gt;</code> tags!
+                            <br>
+                            <em>(không được quên bao văn bản trong thẻ mở và đóng <code class="code">&lt;p&gt;</code>!)</em>
+                        </p>
+                    </li>
+                    <li>
+                        Under the <code class="code">&lt;h3&gt;</code> element that says:
+                        <br>
+                        <em>(Bên đưới phần tử <code class="code">&lt;h3&gt;</code> với nội dung:)</em>
+                        <br>
+                        <code class="code">Countries with Small Brown Bear Populations</code>
+                        <br>
+                        Add a paragraph with the following text:
+                        <br>
+                        <em>(Thêm một đoạn văn với nội dung dung sau:)</em>
+                        <div class="div-border-left">
+                            <em>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</em>
+                        </div>
+                    </li>
+                </ol>
+                <p>
+                    Answer:
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;h1&gt;The Brown Bear&lt;/h1&gt;
+    &lt;div id=&quot;introduction&quot;&gt;
+        &lt;h2&gt;About Brown Bears&lt;/h2&gt;
+        &lt;p&gt;The brown bear (Ursus arctos) is native to parts of northern Eurasia and North America. Its conservation status is currently Least Concern. There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.&lt;/p&gt;
+        &lt;h3&gt;Species&lt;/h3&gt;
+        &lt;h3&gt;Features&lt;/h3&gt;
+        &lt;p&gt;Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;habitat&quot;&gt;
+        &lt;h2&gt;Habitat&lt;/h2&gt;
+        &lt;h3&gt;Countries with Large Brown Bear Populations&lt;/h3&gt;
+        &lt;h3&gt;Countries with Small Brown Bear Populations&lt;/h3&gt;
+        &lt;p&gt;Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;media&quot;&gt;
+        &lt;h2&gt;Media&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/body&gt;                            
+                        </code>
+                    </pre>
+                </p>
+            </div>
+            <div class="concept-review">
+                <h3>&&Concept review</h3>
+                <em>(Xem lại khái niệm <strong>/ˈkɑːnsept/</strong> (Ôn tập))</em>
+                <p>
+                    Want to quickly review some of the concepts you've been learning?
+                    <br>
+                    <em>(Bạn muốn xem lại nhanh chóng một số khái niệm bạn đã từng học?)</em>
+                    <br>
+                    Take a look at this material's <a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet">cheatsheet</a>!
+                    <br>
+                    <em>(Hãy nhìn vào cheatsheet của tài liệu này!)</em>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
