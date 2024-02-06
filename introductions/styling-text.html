@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-81">
+        <meta name="viewport" content="width-divice-width, initial-scale=1.0=">
+        <title>Styling Text</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="full">
+            <h2>Styling Text</h2>
+            <em>(Tạo kiểu văn bản)</em>
+            <p>
+                You can also style using HTML tags.
+                <br>
+                <em>Bạn cũng có thể tạo kiểu văn bản bằng việc sử dụng các thẻ HTML</em>
+                <br>
+                The <code class="code">&lt;em&gt;</code> tag emphasizes text, while the <code class="code">&lt;strong&gt;</code> tag highlights important text.
+                <br>
+                <em>
+                    (Thẻ <code class="code">&lt;em&gt;</code> nhấn mạnh <strong>/ˈemfəsaɪzɪz/</strong> văn bản, trong khi đó thẻ <code class="code">&lt;strong&gt;</code> làm nổi bật <strong>/ˈhaɪlaɪts/</strong> văn bản quan trọng.)
+                </em>
+            </p>
+            <p>
+                Later, when you begin to style websites, you will decide how you want broswers to display content within <code class="code">&lt;em&gt;</code> and <code class="code">&lt;strong&gt;</code> tags.
+                <br>
+                <em>(Sau này, khi bạn bắt đầu tạo kiểu cho trang web, bạn sẽ quyết định <strong>/dɪˈsaɪd/</strong> cách mà bạn muốn các trình duyệt hiển thị nội dung trong thẻ <code class="code">&lt;em&gt;</code> và <code class="code">&lt;strong&gt;</code> như thế nào.)</em>
+                <br>
+                Browsers, however, have built-in style sheets that will generally style these tags in the following ways:
+                <br>
+                <em>(Tuy nhiên, các trình duyệt có bảng định kiểu (một tập hợp các quy tắc định dạng cho các thành phần của một trang web) sẽ thường tạo kiểu cho các thẻ này theo những cách sau: )</em>
+                <br>
+                <ul>
+                    <li>
+                        The <code class="code">&lt;em&gt;</code> tag will generally render as <em>italic</em> emphasis.
+                        <br>
+                        <em>(Thẻ <code class="code">&lt;em&gt;</code> sẽ thường hiển thị dưới dạng nhấn mạnh in nghiên.)</em>
+                    <br>
+                    </li>
+                    <li>
+                        The <code class="code">&lt;strong&gt;</code> tag will generally render as <b>bold</b> emphasis.
+                        <br>
+                        <em>
+                            (Thẻ <code class="code">&lt;strong&gt;</code> thường sẽ hiển thị dưới dạng nhấn mạnh in đậm.)
+                        </em>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Take a look at each style in action:
+                <br>
+                <em>(Hãy xem từng phong các hoạt động:)</em>
+                <pre>
+                    <code class="language-html">
+&lt;p&gt;&lt;strong&gt;The Nile River&lt;/strong&gt; is the &lt;em&gt;longest&lt;/em&gt; river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).&lt;/p&gt;                        
+                    </code>
+                </pre>
+            </p>
+            <p>
+                In this example, the <code class="code">&lt;strong&gt;</code> and <code class="code">&lt;em&gt;</code> tags are used to emphasize the text to product the following:
+                <br>
+                <em>(Trong ví dụ này, các thẻ <code class="code">&lt;strong&gt;</code> và <code class="code">&lt;em&gt;</code> được sử dụng để nhấn mạnh văn bản nhằm tạo <strong>/prəˈdjuːs/</strong> ra nội dung sau:)</em>
+                <br>
+                <strong>The Nile Rive</strong> is the <i>longest</i> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).
+                <br>
+                <br>
+                As we can see, "The Nile River" is bolded and "longest" is in italics.
+                <br>
+                <em>(Như chúng ta có thể thấy, "The Nile River" được in đậm và "longest" thì in nghiên.)</em>
+            </p>
+            <div class="instructions">
+                <h3>&&Instructions</h3>
+                <em>(Hướng dẫn <strong>/ɪnˈstrʌkʃn/)</strong></em>
+                <br>
+                <ol>
+                    <li>
+                        In the first paragraph that starts "The brown bear...", emphasize <code class="code">Ursus arctos</code> using the <code class="code">&lt;em&gt;</code> tag.
+                        <br>
+                        <em>
+                            (Trong đoạn văn bản đầu tiên bắt đầu với "The brown bear...", nhấn mạnh <code class="code">Ursus arctos</code> sử dụng thẻ <code class="code">&lt;em&gt;</code>.)
+                        </em>
+                    </li>
+                    <li>
+                        In the paragraph under <code class="code">About Brown Bears</code>, make the words <code class="code">Least Concern</code> strong using the <code class="code">&lt;strong&gt;</code> tag.
+                        <br>
+                        <em>
+                            (Trong đoạn văn phía dưới <code class="code">About Brown Bears</code>, hãy làm cho các từ <code class="code">Least Concern</code> trở nên mạnh mẽ bằng cách sử dụng thẻ <code class="code">&lt;strong&gt;</code>.)
+                        </em>
+                    </li>
+                </ol>
+                <p>
+                    Answer:
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;h1&gt;The Brown Bear&lt;/h1&gt;
+    &lt;div id=&quot;introduction&quot;&gt;
+        &lt;h2&gt;About Brown Bears&lt;/h2&gt;
+        &lt;p&gt;The brown bear &lt;em&gt;(Ursus arctos)&lt;/em&gt; is native to parts of northern Eurasia and North America. Its conservation status is currently &lt;strong&gt;Least Concern&lt;/strong&gt;. There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.&lt;/p&gt;
+        &lt;h3&gt;Species&lt;/h3&gt;
+        &lt;h3&gt;Features&lt;/h3&gt;
+        &lt;p&gt;Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;habitat&quot;&gt;
+        &lt;h2&gt;Habitat&lt;/h2&gt;
+        &lt;h3&gt;Countries with Large Brown Bear Populations&lt;/h3&gt;
+        &lt;h3&gt;Countries with Small Brown Bear Populations&lt;/h3&gt;
+        &lt;p&gt;Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;media&quot;&gt;
+        &lt;h2&gt;Media&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/body&gt;          
+                        </code>
+                    </pre>
+                </p>
+            </div>
+            <div class="concept-review">
+                <h3>&&Concept review</h3>
+                <em>(Xem lại khái niệm <strong>/ˈkɑːnsept/</strong> (Ôn tập))</em>
+                <p>
+                    Want to quickly review some of the concepts you've been learning?
+                    <br>
+                    <em>(Bạn muốn xem lại nhanh chóng một số khái niệm bạn đã từng học?)</em>
+                    <br>
+                    Take a look at this material's <a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet">cheatsheet</a>!
+                    <br>
+                    <em>(Hãy nhìn vào cheatsheet của tài liệu này!)</em>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
